@@ -29,7 +29,6 @@ export const App = () => {
 		}
 	}
 
-	console.log('current useremail', newEmail)
 	return (
 		<main>	
 			<HomeNavbar email={newEmail}/>
