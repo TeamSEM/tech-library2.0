@@ -9,11 +9,10 @@ import Cart from "./Cart";
 
 export default function HomeNavbar({email}) {
 
-  const logOut = () => {
-    location.reload()
-    localStorage.removeItem("email");
-  }
-  console.log('user email from',email)
+  // const logOut = () => {
+  //   location.reload()
+  //   localStorage.removeItem("email");
+  // }
   return (
     <div>
       <Navbar bg="primary" variant="dark">

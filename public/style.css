@@ -1,5 +1,110 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  background-color: rgb(223, 223, 223);
+body,html {
+  height: 100vh;
+}
+
+.listContainer {
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+}
+
+.listSection {
+  width: 75%;
+}
+
+.item > Button {
+  width: 30px;
+  height: 10px;
+}
+
+.item  {
+  height: 440px;
+}
+
+#itemCard {
+  box-shadow: rgba(0, 0, 0, 0.422) 1px 5px 10px;
+
+}
+#description {
+  width: "300px";
+  background-color: rgb(255, 191, 0);
+  padding: 10%;
+  border-radius: 10%;
+  margin-bottom: 5%;
+}
+
+.loginForm, .allOrSearch {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: "white";
+}
+
+.allOrSearch {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: "white";
+}
+
+.logContainer {
+  align-items: center;
+  background-color: rgb(27, 114, 229);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.allOrSearch > .row > #left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgb(27, 114, 229);
+  border-radius: 20px;
+  box-shadow: gray 10px 10px 20px;
+
+}
+
+.allOrSearch > .row > #right {
+  display: flex;
+  padding: 5%;
+  background-color: rgb(27, 114, 229);
+  border-radius: 20px;
+  box-shadow: gray 10px 10px 20px;
+}
+
+.allOrSearch > .row > #left > button {
+  background-color: orange;
+  border: none;
+  box-shadow: rgb(150, 31, 31) 5px 5px 10px;
+}
+
+#oneItemImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: gray 10px 10px 30px;
+  border-radius: 20px;
+ 
+}
+
+#oneItemImg > img {
+  height: 300px;
+  width: 300px;
+}
+
+#description > Button {
+  width:'150px';
+  background-color: rgb(20, 150, 52);
+  border: none;
+}
+
+#description > Button:hover {
+  background-color: rgb(14, 105, 161);
 }

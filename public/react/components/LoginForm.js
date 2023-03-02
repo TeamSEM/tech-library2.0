@@ -5,21 +5,21 @@ import Form from 'react-bootstrap/Form';
 import apiURL from '../api';
 
 export default function LoginForm({setUserEmail}) {
-    const [email, setEmail] = useState('');
+    const [username, setusername] = useState('');
 	const [password, setPassword] = useState('');
 
     const handleSubmit = async (e) => {
-        // setUserEmail(email)
-        localStorage.setItem("email", email);
+        // setUserusername(username)
+        localStorage.setItem("username", username);
 
-		const response = await fetch(`${apiURL}/users`, {
+		const response = await fetch(`${apiURL}/users/register`, {
 			method: "POST",
 			headers: {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(
 				{
-					email: email,
+					username: username,
                     password: password
 				}
 			)
@@ -29,11 +29,11 @@ export default function LoginForm({setUserEmail}) {
   return (
     <div>
         <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Label>Email address</Form.Label>
+            <Form.Group className="mb-3" controlId="formBasicusername">
+                <Form.Label>username address</Form.Label>
                 <Form.Control
-                onChange={(e) =>{setEmail(e.target.value)}}
-                value={email} 
+                onChange={(e) =>{setusername(e.target.value)}}
+                value={username} 
                 type="email" 
                 placeholder="Enter email" />
                 <Form.Text className="" style={{color:"whitesmoke"}}>
