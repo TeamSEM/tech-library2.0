@@ -30,5 +30,18 @@
     "@testing-library/react": "^12.0.0",
     "babel-jest": "^27.1.0",
     "jest": "^27.1.0"
-  }
+  },
+  "description": "![logo](https://user-images.githubusercontent.com/44912347/202296600-c5f247d6-9616-49db-88f0-38433429d781.jpg)",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TeamSEM/tech-library2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TeamSEM/tech-library2.0/issues"
+  },
+  "homepage": "https://github.com/TeamSEM/tech-library2.0#readme"
 }

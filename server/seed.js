@@ -1,7 +1,7 @@
-const {sauces, items, cart} = require('./seedData.js');
+const {books, movies, shows} = require('./seedData.js');
 
 const {sequelize} = require('./db');
-const {Sauce,Items, Cart } = require('./models');
+const {Books, Movies, Shows } = require('./models');
 
 
 const seed = async () => {
@@ -11,9 +11,9 @@ const seed = async () => {
         await sequelize.sync({ force: true });
     
         // insert data
-        await Promise.all(sauces.map(sauce => Sauce.create(sauce)));
-        await Promise.all(items.map(item => Items.create(item)))
-        await Promise.all(cart.map(cart => Cart.create(cart)))
+        await Promise.all(books.map(books => Books.create(books)));
+        await Promise.all(movies.map(movies => Movies.create(movies)))
+        await Promise.all(shows.map(shows => Shows.create(shows)))
 
         console.log("db populated!");
     } catch (error) {
