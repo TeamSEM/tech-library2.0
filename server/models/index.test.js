@@ -12,9 +12,9 @@ const userData = {
 };
 
 //mock dependencies
-jest.mock('../models/Users');
+jest.mock('../routes/Users');
 jest.mock('bcrypt');
-jest.mock('jsonwebtojen');
+jest.mock('jsonwebtoken');
 
 describe('POST /register' , () => {
     afterEach() {
@@ -29,7 +29,7 @@ expect('new user and JWT token created', async () => {
 const newUser = {
      id: 1,
      username: userData.username,
-    password: 'hashedassword'
+    password: 'hashedpassword'
  };
         
  Users.create.mockResolvedValue(newUser);
