@@ -18,7 +18,7 @@ const Shows = sequelize.define('shows', {
 })
 
 const Users = sequelize.define('users', {
-  name: Sequelize.STRING,
+  username: Sequelize.STRING,
   password: Sequelize.STRING
 })
 
